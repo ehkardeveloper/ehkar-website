@@ -1,32 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://sitemaps.org">
-  <!-- Homepage -->
   <url>
-    <loc>https://ehkar.com</loc>
+    <loc>https://ehkar.com/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Services Page 
-  <url>
-    <loc>https://ehkar.com/services</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-     Products Page 
-  <url>
-    <loc>https://ehkar.com/products</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-    Contact Page 
-  <url>
-    <loc>https://ehkar.com/contact</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  -->
 </urlset>
