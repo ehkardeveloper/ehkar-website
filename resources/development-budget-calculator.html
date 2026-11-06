@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142b4f">
+  <meta name="author" content="eHKAR">
+  <meta property="og:site_name" content="eHKAR">
+  <meta name="description" content="Estimate your mobile app development budget with the eHKAR calculator. Choose your app type, platform, design level, features and backend requirements to see an estimated USD price range.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ehkar.com/resources/development-budget-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mobile App Development Budget Calculator | eHKAR">
+  <meta property="og:description" content="Build a project estimate by selecting your app type, platform, features and services.">
+  <meta property="og:url" content="https://ehkar.com/resources/development-budget-calculator/">
+  <title>Mobile App Development Budget Calculator | eHKAR</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://ehkar.com/#organization",
+        "name": "eHKAR",
+        "url": "https://ehkar.com/"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ehkar.com/#website",
+        "url": "https://ehkar.com/",
+        "name": "eHKAR",
+        "publisher": { "@id": "https://ehkar.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://ehkar.com/resources/development-budget-calculator/#webpage",
+        "url": "https://ehkar.com/resources/development-budget-calculator/",
+        "name": "Mobile App Development Budget Calculator | eHKAR",
+        "description": "Estimate a mobile app development budget by choosing the app type, platform, design level, features and backend requirements.",
+        "isPartOf": { "@id": "https://ehkar.com/#website" },
+        "publisher": { "@id": "https://ehkar.com/#organization" },
+        "breadcrumb": { "@id": "https://ehkar.com/resources/development-budget-calculator/#breadcrumb" },
+        "mainEntity": { "@id": "https://ehkar.com/resources/development-budget-calculator/#calculator" }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://ehkar.com/resources/development-budget-calculator/#calculator",
+        "name": "eHKAR Mobile App Development Budget Calculator",
+        "url": "https://ehkar.com/resources/development-budget-calculator/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript enabled in a modern web browser.",
+        "isAccessibleForFree": true,
+        "description": "An interactive planning tool that estimates mobile app development costs from project type, platform, design, features and backend choices.",
+        "publisher": { "@id": "https://ehkar.com/#organization" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://ehkar.com/resources/development-budget-calculator/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ehkar.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Small Business Mobile App Planning Toolkit",
+            "item": "https://ehkar.com/resources/small-business-mobile-app-planning-toolkit.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Mobile App Development Budget Calculator",
+            "item": "https://ehkar.com/resources/development-budget-calculator/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="mobile-calculator.css">
+      <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GV3X1Y6K6D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GV3X1Y6K6D');
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand-link" href="https://ehkar.com/" aria-label="eHKAR home">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-labelledby="brandTitle">
+          <title id="brandTitle">eHKAR brand mark</title>
+          <rect x="1" y="1" width="46" height="46" rx="13" fill="#ffffff"/>
+          <path d="M13 25.2c0-7.2 4.6-12.1 11.2-12.1 6.5 0 10.5 4.5 10.5 11.2 0 .8-.1 1.6-.2 2.3H19.4c.7 3.2 3 4.9 6.3 4.9 2.5 0 4.6-.8 6.6-2.3l2.9 4.2c-2.7 2.2-6.1 3.5-10 3.5-7.2 0-12.2-4.7-12.2-11.7zm6.4-2.7h9.1c-.3-2.5-1.8-4-4.4-4-2.4 0-4.1 1.4-4.7 4z" fill="#142b4f"/>
+          <circle cx="36.5" cy="11.5" r="4.2" fill="#e5b84b"/>
+        </svg>
+        <span>
+          <span class="brand-name">eHKAR</span>
+          <span class="brand-tagline">Digital solutions for businesses.</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="https://ehkar.com/">Home</a>
+        <a href="https://ehkar.com/resources/small-business-mobile-app-planning-toolkit">Planning Toolkit</a>
+        <a href="#budgetForm">Budget Calculator</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://ehkar.com/">Home</a> / 
+      <a href="https://ehkar.com/resources/small-business-mobile-app-planning-toolkit">Small Business Mobile App Planning Toolkit</a> /
+      <span aria-current="page">Budget Calculator</span>
+    </nav>
+    <header class="intro">
+      <p class="eyebrow">eHKAR · Free planning tool</p>
+      <h1>Mobile App Development Budget Calculator</h1>
+      <p class="lead">Explore an estimated development budget for your app. Choose your platform, app type, design level and required features to see an indicative price range in US dollars.</p>
+    </header>
+
+    <div class="layout">
+      <form class="panel" id="budgetForm">
+        <section class="section">
+          <h2>1. Project basics</h2>
+          <div class="field-grid">
+            <div class="field">
+              <label for="appType">What type of app do you need?</label>
+              <select id="appType" name="appType">
+                <option value="basic">Basic app</option>
+                <option value="business">Business app</option>
+                <option value="ecommerce" selected>eCommerce app</option>
+                <option value="booking">Booking app</option>
+                <option value="custom">Custom app</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="platform">Which platform?</label>
+              <select id="platform" name="platform">
+                <option value="android" selected>Android</option>
+                <option value="ios">iOS</option>
+                <option value="both">Android + iOS</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="design">UI/UX design level</label>
+              <select id="design" name="design">
+                <option value="basic">Basic</option>
+                <option value="standard" selected>Standard</option>
+                <option value="premium">Premium</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="backend">Backend requirement</label>
+              <select id="backend" name="backend">
+                <option value="none">No backend</option>
+                <option value="basic" selected>Basic backend</option>
+                <option value="advanced">Advanced backend</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>2. Select the features you need</h2>
+          <p class="section-help">Choose as many as apply. Leave an option unchecked if you do not need it.</p>
+          <fieldset>
+            <legend class="sr-only">App features</legend>
+            <div class="option-list">
+              <label class="option"><input type="checkbox" name="feature" value="login" checked><span><strong>User registration and login</strong><small>$100–$200</small></span></label>
+              <label class="option"><input type="checkbox" name="feature" value="profile" checked><span><strong>User profile</strong><small>$80–$160</small></span></label>
+              <label class="option"><input type="checkbox" name="feature" value="payment" checked><span><strong>Payment integration</strong><small>$150–$350</small></span></label>
+              <label class="option"><input type="checkbox" name="feature" value="notifications" checked><span><strong>Push notifications</strong><small>$80–$160</small></span></label>
+              <label class="option"><input type="checkbox" name="feature" value="admin" checked><span><strong>Admin dashboard</strong><small>$200–$500</small></span></label>
+              <label class="option"><input type="checkbox" name="feature" value="chat"><span><strong>Live chat</strong><small>$250–$600</small></span></label>
+              <label class="option"><input type="checkbox" name="feature" value="maps"><span><strong>Maps and location</strong><small>$100–$250</small></span></label>
+              <label class="option"><input type="checkbox" name="feature" value="analytics"><span><strong>Analytics</strong><small>$80–$180</small></span></label>
+              <label class="option"><input type="checkbox" name="feature" value="offline"><span><strong>Offline functionality and sync</strong><small>$150–$350</small></span></label>
+              <label class="option"><input type="checkbox" name="feature" value="api"><span><strong>Third-party API integration</strong><small>$150–$400</small></span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="section">
+          <h2>3. Additional services</h2>
+          <fieldset>
+            <legend class="sr-only">Additional services</legend>
+            <div class="option-list">
+              <label class="option"><input type="checkbox" name="service" value="testing" checked><span><strong>Testing and quality assurance</strong><small>$100–$250</small></span></label>
+              <label class="option"><input type="checkbox" name="service" value="deployment" checked><span><strong>App deployment</strong><small>$75–$150</small></span></label>
+            </div>
+          </fieldset>
+        </section>
+        <p class="error" id="errorMessage" role="alert" aria-live="polite"></p>
+      </form>
+
+      <aside class="panel result-panel" aria-live="polite">
+        <p class="result-label">Your estimated development budget</p>
+        <div class="estimate" id="estimate">$2,339 – $5,141</div>
+        <p class="estimate-note">One-time estimated development cost · USD</p>
+
+        <div class="result-actions">
+          <button class="primary" type="button" id="copyButton">Copy estimate</button>
+          <button class="secondary" type="button" id="resetButton">Reset</button>
+        </div>
+
+        <div class="breakdown">
+          <h3>Cost breakdown</h3>
+          <div class="breakdown-row"><span>Base app cost</span><strong id="baseCost">$999 – $2,200</strong></div>
+          <div class="breakdown-row"><span>Selected features</span><strong id="featureCost">$610 – $1,370</strong></div>
+          <div class="breakdown-row"><span>Backend</span><strong id="backendCost">$250 – $500</strong></div>
+          <div class="breakdown-row"><span>Additional services</span><strong id="serviceCost">$175 – $400</strong></div>
+          <div class="breakdown-row"><span>Subtotal before multipliers</span><strong id="subtotal">$2,034 – $4,470</strong></div>
+          <div class="breakdown-row"><span>Platform multiplier</span><strong id="platformMultiplier">× 1.00</strong></div>
+          <div class="breakdown-row"><span>Design multiplier</span><strong id="designMultiplier">× 1.15</strong></div>
+          <div class="breakdown-row total"><span>Estimated total</span><strong id="totalBreakdown">$2,339 – $5,141</strong></div>
+        </div>
+
+        <div class="maintenance">
+          <strong>Optional ongoing maintenance</strong>
+          <span>$50–$150 per month. Not included in the one-time development estimate.</span>
+        </div>
+        <p class="disclaimer">This calculator provides an early planning estimate, not a formal quotation. Actual costs depend on detailed requirements, integrations, complexity, delivery scope and third-party fees. Hosting, payment gateway charges and app-store fees are not included.</p>
+      </aside>
+    </div>
+
+    <section class="content">
+      <h2>How to use this app development cost calculator</h2>
+      <p>Select the type of app you are planning, choose Android, iOS or both, and indicate the design level and backend requirements. Then select the features and services you expect to need. The estimated USD budget and itemized breakdown update automatically.</p>
+      <p>Still planning your project? Read the <a href="https://ehkar.com/resources/small-business-mobile-app-planning-toolkit.html">Small Business Mobile App Planning Toolkit</a> to define your requirements before estimating costs.</p>
+      <h2>What affects mobile app development cost?</h2>
+      <ul>
+        <li><strong>App type:</strong> A simple utility app generally needs a different scope from an eCommerce or custom business platform.</li>
+        <li><strong>Platform:</strong> Supporting Android and iOS can require additional implementation and testing.</li>
+        <li><strong>Features:</strong> Payments, dashboards, chat, maps and integrations add development work.</li>
+        <li><strong>Backend:</strong> Accounts, APIs, data synchronization and business logic can require server-side development.</li>
+        <li><strong>Design and quality:</strong> Custom interfaces, testing and deployment affect project scope.</li>
+      </ul>
+      <h2>Frequently asked questions</h2>
+      <div class="faq-item">
+        <h3>Is this the final price for my app?</h3>
+        <p>No. It is an indicative planning range based on the selections and assumptions shown. A final quotation requires a review of your detailed requirements.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does the estimate include hosting and third-party fees?</h3>
+        <p>No. Hosting, payment gateway charges, app-store fees, paid APIs and other third-party costs are excluded unless separately agreed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is maintenance included in the development price?</h3>
+        <p>No. The calculator displays optional monthly maintenance separately from the one-time development estimate.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How can I get an accurate quotation?</h3>
+        <p>Prepare your app requirements, including user roles, screens, workflows, integrations and launch expectations, then contact eHKAR for a project assessment.</p>
+      </div>
+    </section>
+
+    <p class="footer">© <span id="year"></span> <a href="https://ehkar.com/">eHKAR</a> · Digital solutions for businesses.<br>Development budget estimates are subject to project review.</p>
+  </main>
+
+  <script>
+    "use strict";
+
+    // eHKAR's initial, editable pricing assumptions.
+    const PRICING = {
+      baseCosts: {
+        basic: { label: "Basic app", min: 450, max: 750 },
+        business: { label: "Business app", min: 750, max: 1300 },
+        ecommerce: { label: "eCommerce app", min: 999, max: 2200 },
+        booking: { label: "Booking app", min: 1200, max: 2500 },
+        custom: { label: "Custom app", min: 2000, max: 5000 }
+      },
+      platforms: {
+        android: { label: "Android", multiplier: 1.00 },
+        ios: { label: "iOS", multiplier: 1.00 },
+        both: { label: "Android + iOS", multiplier: 1.65 }
+      },
+      designLevels: {
+        basic: { label: "Basic", multiplier: 1.00 },
+        standard: { label: "Standard", multiplier: 1.15 },
+        premium: { label: "Premium", multiplier: 1.30 }
+      },
+      features: {
+        login: { label: "User registration and login", min: 100, max: 200 },
+        profile: { label: "User profile", min: 80, max: 160 },
+        payment: { label: "Payment integration", min: 150, max: 350 },
+        notifications: { label: "Push notifications", min: 80, max: 160 },
+        admin: { label: "Admin dashboard", min: 200, max: 500 },
+        chat: { label: "Live chat", min: 250, max: 600 },
+        maps: { label: "Maps and location", min: 100, max: 250 },
+        analytics: { label: "Analytics", min: 80, max: 180 },
+        offline: { label: "Offline functionality and sync", min: 150, max: 350 },
+        api: { label: "Third-party API integration", min: 150, max: 400 }
+      },
+      backend: {
+        none: { label: "No backend", min: 0, max: 0 },
+        basic: { label: "Basic backend", min: 250, max: 500 },
+        advanced: { label: "Advanced backend", min: 700, max: 1500 }
+      },
+      services: {
+        testing: { label: "Testing and quality assurance", min: 100, max: 250 },
+        deployment: { label: "App deployment", min: 75, max: 150 }
+      },
+      maintenance: { min: 50, max: 150, period: "month" }
+    };
+
+    const form = document.getElementById("budgetForm");
+    const currency = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0
+    });
+
+    function formatUSD(value) {
+      return currency.format(value);
+    }
+
+    function formatRange(min, max) {
+      return `${formatUSD(min)} – ${formatUSD(max)}`;
+    }
+
+    function getSelections() {
+      return {
+        appType: document.getElementById("appType").value,
+        platform: document.getElementById("platform").value,
+        design: document.getElementById("design").value,
+        backend: document.getElementById("backend").value,
+        features: Array.from(form.querySelectorAll('input[name="feature"]:checked'))
+          .map(input => input.value),
+        services: Array.from(form.querySelectorAll('input[name="service"]:checked'))
+          .map(input => input.value)
+      };
+    }
+
+    function calculateBudget(selections) {
+      const base = PRICING.baseCosts[selections.appType];
+      const platform = PRICING.platforms[selections.platform];
+      const design = PRICING.designLevels[selections.design];
+      const backend = PRICING.backend[selections.backend];
+
+      if (!base || !platform || !design || !backend) {
+        throw new Error("Please choose valid project options.");
+      }
+      if (!Array.isArray(selections.features) ||
+          !Array.isArray(selections.services)) {
+        throw new Error("Invalid feature or service selection.");
+      }
+
+      const featureTotal = { min: 0, max: 0 };
+      for (const key of selections.features) {
+        const item = PRICING.features[key];
+        if (!item) throw new Error("An invalid feature was selected.");
+        featureTotal.min += item.min;
+        featureTotal.max += item.max;
+      }
+
+      const serviceTotal = { min: 0, max: 0 };
+      for (const key of selections.services) {
+        const item = PRICING.services[key];
+        if (!item) throw new Error("An invalid service was selected.");
+        serviceTotal.min += item.min;
+        serviceTotal.max += item.max;
+      }
+
+      const subtotalMin = base.min + featureTotal.min + backend.min + serviceTotal.min;
+      const subtotalMax = base.max + featureTotal.max + backend.max + serviceTotal.max;
+
+      // The approved version applies both multipliers to the full subtotal.
+      const multiplier = platform.multiplier * design.multiplier;
+      const totalMin = Math.round(subtotalMin * multiplier);
+      const totalMax = Math.round(subtotalMax * multiplier);
+
+      return {
+        base, featureTotal, backend, serviceTotal,
+        subtotalMin, subtotalMax,
+        platform, design,
+        totalMin, totalMax
+      };
+    }
+
+    function updateText(id, value) {
+      document.getElementById(id).textContent = value;
+    }
+
+    function renderEstimate() {
+      const error = document.getElementById("errorMessage");
+      try {
+        const result = calculateBudget(getSelections());
+        error.textContent = "";
+
+        updateText("estimate", formatRange(result.totalMin, result.totalMax));
+        updateText("baseCost", formatRange(result.base.min, result.base.max));
+        updateText("featureCost", formatRange(result.featureTotal.min, result.featureTotal.max));
+        updateText("backendCost", formatRange(result.backend.min, result.backend.max));
+        updateText("serviceCost", formatRange(result.serviceTotal.min, result.serviceTotal.max));
+        updateText("subtotal", formatRange(result.subtotalMin, result.subtotalMax));
+        updateText("platformMultiplier", `× ${result.platform.multiplier.toFixed(2)}`);
+        updateText("designMultiplier", `× ${result.design.multiplier.toFixed(2)}`);
+        updateText("totalBreakdown", formatRange(result.totalMin, result.totalMax));
+      } catch (err) {
+        error.textContent = err.message || "Unable to calculate the estimate.";
+      }
+    }
+
+    form.addEventListener("change", renderEstimate);
+
+    document.getElementById("resetButton").addEventListener("click", () => {
+      form.reset();
+      renderEstimate();
+    });
+
+    document.getElementById("copyButton").addEventListener("click", async () => {
+      const result = calculateBudget(getSelections());
+      const summary = [
+        "eHKAR Mobile App Development Budget Estimate",
+        `Estimated development budget: ${formatRange(result.totalMin, result.totalMax)}`,
+        `Base app: ${formatRange(result.base.min, result.base.max)}`,
+        `Features: ${formatRange(result.featureTotal.min, result.featureTotal.max)}`,
+        `Backend: ${formatRange(result.backend.min, result.backend.max)}`,
+        `Additional services: ${formatRange(result.serviceTotal.min, result.serviceTotal.max)}`,
+        `Platform: ${result.platform.label} (× ${result.platform.multiplier.toFixed(2)})`,
+        `Design: ${result.design.label} (× ${result.design.multiplier.toFixed(2)})`,
+        "Optional maintenance: $50–$150/month (not included)",
+        "This is an indicative estimate, not a formal quotation."
+      ].join("\n");
+
+      const button = document.getElementById("copyButton");
+      try {
+        await navigator.clipboard.writeText(summary);
+        button.textContent = "Copied!";
+        window.setTimeout(() => { button.textContent = "Copy estimate"; }, 1800);
+      } catch (err) {
+        button.textContent = "Copy unavailable";
+        window.setTimeout(() => { button.textContent = "Copy estimate"; }, 1800);
+      }
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Initial calculation.
+    renderEstimate();
+  </script>
+</body>
+</html>
